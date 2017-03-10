@@ -19,8 +19,8 @@ module.exports.email = function(req,res){
 	let transporter = nodemailer.createTransport({
 	    service: 'gmail',
 	    auth: {
-	        user: 'clairepetley@gmail.com',
-	        pass: 'Acoustical1'
+	        user: CP_EMAIL,
+	        pass: CP_PASSWORD
 	    }
 	});
 
