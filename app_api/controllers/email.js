@@ -19,8 +19,8 @@ module.exports.email = function(req,res){
 	let transporter = nodemailer.createTransport({
 	    service: 'gmail',
 	    auth: {
-	        user: CP_EMAIL,
-	        pass: CP_PASSWORD
+	        user: process.env.CP_EMAIL,
+	        pass: process.env.CP_PASSWORD
 	    }
 	});
 
@@ -29,8 +29,7 @@ module.exports.email = function(req,res){
 	    from: 'clairepetley@gmail.com', // sender address
 	    to: 'clairepetley@gmail.com', // list of receivers
 	    subject: 'WAGGY TAILS EMAIL', // Subject line
-	    text: req.body.message // plain text body
-
+	    text: "email: " +  req.body.email + "\n \n \n " + "Message \n \n " + req.body.message  + "\n \n name: " + req.body.name // plain text body
 	};
 
 	// send mail with defined transport object
