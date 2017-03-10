@@ -1,0 +1,85 @@
+<page-header></page-header>
+
+<script>
+$(document).ready(function(){
+    var from,to,subject,text;
+    $("#send_email").click(function(){      
+        
+        to=$("#to").val();
+        //subject=$("#subject").val();
+        name=$("#emailname").val();
+        text=$("#content").val();
+        $("#message").text("Sending E-mail...Please wait");
+        
+        var address = "/api/send";
+        
+        $.get(address,{to:to,name:name,text:text},function(data){
+        if(data=="sent") {
+            //alert("sent a message");
+            $("#innercontacttitle").addClass("pcol-text");
+            $("#innercontacttitle").removeClass("white-text");
+            $("#innercontacttitle").css("background-color", "white");
+            $("#innercontacttitle").css("opacity","1");
+            $("#innercontacttitle").css("border-radius", "20px");
+            $("#innercontacttitle").css("padding-top", "10px");
+            $("#innercontacttitle").css("padding-bottom", "10px");
+            $("#innercontacttitle").css("margin-top", "7em");
+            $("#innercontacttitle").empty().html("Thank you for your message. <br> I will be in touch shortly!");
+            $("#innercontacttitle").css("margin-bottom", "2em");
+            $("#bk2homerow").css("display", "block");            
+            $("#messageform").empty();
+            
+        } 
+        });
+        });
+    });
+
+</script>
+
+    <div id="contacttitle" class="container-fluid contacttitle">
+    	<p id="innercontacttitle" class=" white-text col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4 text-center" style="margin-top:1em;">Get in touch</p>
+    </div>
+
+    <div id="bk2homerow" class="row text-center" style="margin-bottom:12em; display:none;">
+    	<a id="bk2home" class="btn btn-primary" href="/home">Back to home</a>
+    </div>
+
+    <div id="messageform" class="container-fluid">
+        <div class="form-group col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+
+            <input id="to" type="text" class="form-control" placeholder="email address" />
+                        
+        </div>
+
+        <div class="form-group col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+
+            <input id="emailname" type="text" class="form-control" placeholder="name" />
+        
+        </div>
+
+        <div class="form-group col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+           
+        
+                <textarea id="content" cols="40" rows="5" class="form-control" placeholder="message"></textarea>
+         
+        </div>
+
+
+        <div class="form-group col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4 text-center">
+          
+                <button id="send_email" class="btn btn-default">Send Email</button>
+      
+        </div>
+
+
+        <span id="message" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4 text-center white-text"></span>
+
+        
+
+    </div>
+
+
+
+
+
+<page-footer></page-footer>

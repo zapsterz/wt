@@ -1,0 +1,82 @@
+
+<page-header></page-header>
+
+
+
+<div id="wholecontact" class="container-fluid bglightgrey shadow">
+
+
+
+<div id="contactdiv">
+	<div ng-if="vm.done === 'notdone'">
+ 		<div id="contacttitle" class="container-fluid contacttitle">
+    		<p id="innercontacttitle" class=" white-text col-xs-10 offset-xs-1 col-md-6 offset-md-1 col-lg-4 offset-lg-1 text-center">Get in touch</p>
+	    </div>
+    </div>
+
+
+    <div ng-if="vm.done !== 'notdone'">
+	 	<div id="sent" class="container-fluid contacttitle">
+	    	<p id="sentinner" class=" white-text col-xs-10 offset-xs-1 col-md-4 offset-md-1 center text-center">Thank you for your message - we'll get back to you as soon as possible.</p>
+	    </div>    
+
+	    <div id="bk2homerow" class="container-fluid text-center">
+	    	<a id="bk2home" class="btn btn-primary center" href="/">Back to home</a>
+	    </div>
+    </div>
+
+
+
+    <div ng-if="vm.done === 'notdone'">
+	    <div id="messageform" class="container-fluid">
+
+	    	<form id="contactusform" name="formuser" ng-submit="vm.submit(user)">
+
+		        <div class="form-group col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-md-6 offset-md-1 col-lg-4 offset-lg-1">
+
+		            <input id="to"  type="text" ng-model="vm.user.email" class="form-control" placeholder="email address" />
+		                        
+		        </div>
+
+		        
+
+		        <div class="form-group col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-md-6 offset-md-1 col-lg-4 offset-lg-1">
+
+		            <input id="name" type="text" ng-model="vm.user.name" class="form-control" placeholder="name" />
+		        
+		        </div>
+
+		        <div class="form-group col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-md-6 offset-md-1 col-lg-4 offset-lg-1">
+		           
+		        
+		            <textarea id="content" cols="40" rows="5" class="form-control" ng-model="vm.user.message" placeholder="message"></textarea>
+		         
+		        </div>
+
+
+		        <div class="form-group col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-md-6 offset-md-1 col-lg-4 offset-lg-1 text-center">
+		          
+		                <button type="submit" id="send_email" class="btn btn-primary">Send Email</button>
+		      
+		        </div>
+
+		        
+
+	        </form>
+
+	    </div>
+    </div>
+
+	
+
+</div>
+
+
+</div>
+
+
+
+
+
+<page-footer></page-footer>
+

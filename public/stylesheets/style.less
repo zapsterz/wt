@@ -1,0 +1,512 @@
+html, body {
+	font-family: 'Convergence';
+}
+
+
+@relheight: 33vw * 0.66;
+
+@var70height: 70vh;
+@var60height: 20vh;
+
+@quarter: @var70height * .25;
+
+@fifth: @var70height * .2;
+
+@normaltextsize: 1.1em;
+
+@var25width: 24vw;
+
+@maincol: #470024;
+@lightbg: #F7F7F9;
+@greenish: #216869;
+@redish: #721817;
+
+
+@mybgprimary: #428bca;
+@mybggreen: #dff0d8;
+@mydarkgrey: #A9A9A9;
+
+a {
+  color: #00B7FF;
+}
+
+#homeimg {
+
+		height:70vh;
+		width:100%;
+		background-image:url("/images/group3.png");
+		background-repeat: no-repeat;
+		background-position:0% 50%;
+		background-size: cover;
+
+		
+}
+
+#formsimg {
+
+		height:70vh;
+		width:100%;
+		background-image:url("/images/forms.jpg");
+		background-repeat: no-repeat;
+		background-position:0% 50%;
+		background-size: cover;
+}
+
+#joinimg {
+
+		height:70vh;
+		width:100%;
+		background-image:url("/images/join.jpg");
+		background-repeat: no-repeat;
+		background-position:0% 50%;
+		background-size: cover;
+}
+
+
+#feesimg {
+
+		min-height:70vh;
+		width:100%;
+		background-image:url("/images/fees.jpg");
+		background-repeat: no-repeat;
+		background-position:20% 50%;
+		background-size: cover;	
+}
+
+#donateimg {
+
+		min-height:70vh;
+		width:100%;
+		background-image:url("/images/donate.jpg");
+		background-repeat: no-repeat;
+		background-position:50% 50%;
+		background-size: cover;	
+}
+
+
+#volunteerimg {
+
+		min-height:70vh;
+
+
+		width:100%;
+		background-image:url("/images/volunteer.jpg");
+		background-repeat: no-repeat;
+		background-position:20% 20%;
+		background-size: cover;	
+}
+
+#bringadogimg {
+
+		min-height:70vh;
+		width:100%;
+		background-image:url("/images/bringadog.jpg");
+		background-repeat: no-repeat;
+		background-position:60% 30%;
+		background-size: cover;	
+}
+
+
+#fees2img {
+		height:70vh;
+		width:100%;
+		background-image:url("/images/fees2.jpg");
+		background-repeat: no-repeat;
+		background-position:0% 0%;
+		background-size: 100% auto;	
+}
+
+#formsid {
+	max-height:60vh;
+	overflow:auto;
+}
+
+
+
+#wholesupporters {
+		
+		height:70vh;
+		width:100%;
+		background-image:url("/images/supporters.jpg");
+		background-repeat: no-repeat;
+		background-position:0% 50%;
+		background-size: cover;
+		color:white;
+	
+}
+
+
+
+.wholeheader {
+	background-color:white;
+	
+}
+
+.op08 {
+	opacity:0.8;
+	background-color:black;
+}
+
+.op {
+	opacity:0.7;
+	background-color:black;
+}
+
+.op06 {
+	opacity:0.6;
+	background-color:black;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+	vertical-align:middle;
+}
+
+
+.headertext {
+	color:green;
+}
+
+.element {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.elementrel {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	
+}
+
+
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 1px 4px 20px -2px;
+}
+
+.tempshadow {
+	
+	box-shadow:         inset 1px 4px 20px -2px;
+	box-shadow: inset 0 20px 20px -20px #000000;
+}
+
+
+.text-center {
+	width:100%;
+	text-align:center;
+}
+
+
+.navbar-nav > .nav-item {
+	background-color:none;
+	color:@mybgprimary;
+
+	
+
+		@media only screen and (min-width : 320px) {
+			
+		}
+		@media only screen and (min-width : 992px) {
+			width:@var25width;
+
+			font-size:@normaltextsize;			
+		}
+
+
+	    @media only screen and (min-width : 1200px) {
+			width:@var25width;
+			font-size:@normaltextsize;
+		}
+	
+
+	
+}
+
+.navbar-nav > .nav-item > .dropdown-menu {
+	background-color:none;
+	color:@mybgprimary;
+
+	
+
+	    @media only screen and (min-width : 1200px) {
+			width:@var25width;
+
+			font-size:@normaltextsize;
+		}
+	
+		@media only screen and (min-width : 320px) {
+			width:100%;
+		}
+}
+
+.navbar-nav > .nav-item > .dropdown-menu > .dropdown-item {
+	
+	color:@mybgprimary;
+	
+
+	    @media only screen and (min-width : 1200px) {
+			width:@var25width;
+			font-size:@normaltextsize;
+		}
+	
+		@media only screen and (min-width : 320px) {
+			width:@var25width;
+			
+			font-size:@normaltextsize;
+					
+		}
+}
+
+.navbar-nav > .nav-item > .dropdown-menu > .dropdown-item:hover {
+	
+	background-color:none;
+	color:navy;
+	
+}
+
+
+.dropdown-menu {
+	border:solid 2px @mybgprimary;
+	border-top:none;
+	border-radius:0px;
+	
+}
+
+#navbarNavDropdown > .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item {
+	width:100%;
+}
+
+
+
+.navbar-nav > .nav-item > .nav-link {
+	color:@mybgprimary;
+	background:none;
+	font-weight:500;
+	font-size: @normaltextsize;
+	}
+
+
+#allslogans {
+	@media only screen and (min-width : 320px) {
+
+		border-radius: 25px;
+
+	}
+
+	@media only screen and (min-width : 992px) {
+			
+	}	
+
+	
+}
+
+.blurb {
+	font-family: 'Convergence';
+	font-size: 1.3em;
+}
+
+
+.slogan {
+	font-size:@quarter;
+	color:@lightbg;
+	text-shadow: 2px 2px black;
+}
+
+.newslogan {
+	color:@mybgprimary;
+	
+}
+
+.smalltitle {
+	padding-top:20px;
+	padding-bottom:20px;
+	margin:auto;
+}
+
+.smallerh1 {
+	font-size:1.5em;
+}
+
+.small1 {
+	font-size:1.7em;
+}
+
+.updoffset {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.jmargin {
+	margin-top:10px;
+	margin-bottom:100px;
+}
+
+.lroffset {
+	padding-left:30px;
+	padding-right:30px;
+}
+
+.updmargin {
+	margin-top:15px;
+	margin-bottom:15px;
+	font-size:2em;
+}
+
+.navbar {
+	background:white;
+}
+
+
+
+.bglightgrey {
+	background-color:#F5F5F5;
+}
+
+.bggreen {
+	background-color:@mybggreen;
+}
+
+.bgblue {
+	background-color:@mybgprimary;
+}
+
+
+.darkgrey {
+	background-color:@mydarkgrey;
+}
+
+
+#wwd1 {
+
+		min-height:@relheight;
+		width:100%;
+		/*
+		background-image:url("/images/wwd1.jpg");
+		*/
+		background-repeat: no-repeat;
+		background-position:0% 0%;
+		background-size: cover;	
+
+}
+
+.detailimg {
+	max-height:100%;
+	max-width:100%;
+	border-radius:20px;
+
+}
+
+.exptext {
+	font-size:1.0em;
+}
+
+.textcolwhite {
+	color:white;
+}
+
+.odimg {
+	
+	max-height:100%;
+	max-width:100%;
+	border-radius:20px;	
+}
+
+.sodimg {
+	max-height:100%;
+	max-width:100%;
+	border-radius:0px;		
+}
+
+#contactus {
+	min-height:@var70height;
+}
+
+#contacttitle {
+	padding-top:20px;
+}
+
+#contactdiv {
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+.center {
+	margin:auto;
+}
+
+#wholecontact {
+	min-height:@var60height;
+
+	background-image:url("/images/ourdogs/rt.png");
+	background-repeat: no-repeat;
+	background-position:100% 60%;
+	background-size: auto 100%;
+
+	@media only screen and (max-width : 400px) {
+		background-position:50% 50%;
+		background-image:url("/images/ourdogs/rt_xs.png");
+		color:white;
+	}
+	@media only screen and (min-width : 400px) {
+		background-position:cover 50%;
+		background-image:url("/images/ourdogs/rt.png");
+		color:white;
+	}
+
+	@media only screen and (min-width : 768px) {
+		background-position:right 50%;
+		background-image:url("/images/ourdogs/rt_md.png");
+		color:black;
+	}
+
+	@media only screen and (min-width : 992px) {
+			background-position:right 50%;
+			background-image:url("/images/ourdogs/rt_md.png");
+			color:black;
+	}	
+	@media only screen and (min-width : 1200px) {
+			background-position:right 50%;
+			background-image:url("/images/ourdogs/rt.png");
+			color:black;
+	}
+}
+
+#bk2homerow {
+	margin-top:10px;
+}
+
+#to, #name, #content {
+	opacity:0.7;
+}
+
+.sim {
+	height:100px;
+}
+
+.logo {
+	margin-top:10px;
+}
+
+.footerheader {
+	color:white;
+	font-weight:700;
+}
+
+.footerlink {
+	color:white;
+	float:left; 
+	clear:left
+}
