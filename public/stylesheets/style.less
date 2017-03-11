@@ -6,7 +6,7 @@ html, body {
 @relheight: 33vw * 0.66;
 
 @var70height: 70vh;
-@var60height: 20vh;
+@var60height: 60vh;
 
 @quarter: @var70height * .25;
 
@@ -34,7 +34,14 @@ a {
 
 		height:70vh;
 		width:100%;
-		background-image:url("/images/group3.png");
+		@media only screen and (max-width : 991px) {
+			background-image:url("/images/group3_400.png");		
+		}
+		@media only screen and (min-width : 992px) {
+			background-image:url("/images/group3_800.png");		
+		}
+
+		
 		background-repeat: no-repeat;
 		background-position:0% 50%;
 		background-size: cover;
@@ -46,7 +53,13 @@ a {
 
 		height:70vh;
 		width:100%;
-		background-image:url("/images/forms.jpg");
+		
+		@media only screen and (max-width : 991px) {
+			background-image:url("/images/forms_400.png");		
+		}
+		@media only screen and (min-width : 992px) {
+			background-image:url("/images/forms_800.png");		
+		}		
 		background-repeat: no-repeat;
 		background-position:0% 50%;
 		background-size: cover;
@@ -56,7 +69,13 @@ a {
 
 		height:70vh;
 		width:100%;
-		background-image:url("/images/join.jpg");
+		@media only screen and (max-width : 991px) {
+			background-image:url("/images/join_400.png");		
+		}
+		@media only screen and (min-width : 992px) {
+			background-image:url("/images/join_800.png");		
+		}	
+
 		background-repeat: no-repeat;
 		background-position:0% 50%;
 		background-size: cover;
@@ -67,7 +86,12 @@ a {
 
 		min-height:70vh;
 		width:100%;
-		background-image:url("/images/fees.jpg");
+		@media only screen and (max-width : 991px) {
+			background-image:url("/images/fees_400.png");		
+		}
+		@media only screen and (min-width : 992px) {
+			background-image:url("/images/fees_800.png");		
+		}
 		background-repeat: no-repeat;
 		background-position:20% 50%;
 		background-size: cover;	
@@ -77,7 +101,12 @@ a {
 
 		min-height:70vh;
 		width:100%;
-		background-image:url("/images/donate.jpg");
+		@media only screen and (max-width : 991px) {
+			background-image:url("/images/donate_400.png");		
+		}
+		@media only screen and (min-width : 992px) {
+			background-image:url("/images/donate_800.png");		
+		}
 		background-repeat: no-repeat;
 		background-position:50% 50%;
 		background-size: cover;	
@@ -90,7 +119,12 @@ a {
 
 
 		width:100%;
-		background-image:url("/images/volunteer.jpg");
+		@media only screen and (max-width : 991px) {
+			background-image:url("/images/volunteer_400.png");		
+		}
+		@media only screen and (min-width : 992px) {
+			background-image:url("/images/volunteer_800.png");		
+		}
 		background-repeat: no-repeat;
 		background-position:20% 20%;
 		background-size: cover;	
@@ -100,7 +134,12 @@ a {
 
 		min-height:70vh;
 		width:100%;
-		background-image:url("/images/bringadog.jpg");
+		@media only screen and (max-width : 991px) {
+			background-image:url("/images/bringadog_400.png");		
+		}
+		@media only screen and (min-width : 992px) {
+			background-image:url("/images/bringadog_800.png");		
+		}
 		background-repeat: no-repeat;
 		background-position:60% 30%;
 		background-size: cover;	
@@ -110,7 +149,12 @@ a {
 #fees2img {
 		height:70vh;
 		width:100%;
-		background-image:url("/images/fees2.jpg");
+		@media only screen and (max-width : 991px) {
+			background-image:url("/images/fees2_400.png");		
+		}
+		@media only screen and (min-width : 992px) {
+			background-image:url("/images/fees2_800.png");		
+		}
 		background-repeat: no-repeat;
 		background-position:0% 0%;
 		background-size: 100% auto;	
@@ -127,7 +171,12 @@ a {
 		
 		height:70vh;
 		width:100%;
-		background-image:url("/images/supporters.jpg");
+		@media only screen and (max-width : 991px) {
+			background-image:url("/images/supporters_400.png");		
+		}
+		@media only screen and (min-width : 992px) {
+			background-image:url("/images/supporters_800.png");		
+		}
 		background-repeat: no-repeat;
 		background-position:0% 50%;
 		background-size: cover;
@@ -450,36 +499,36 @@ a {
 #wholecontact {
 	min-height:@var60height;
 
-	background-image:url("/images/ourdogs/rt.png");
+	background-image:url("/images/ourdogs/rt_400.png");
 	background-repeat: no-repeat;
 	background-position:100% 60%;
 	background-size: auto 100%;
 
 	@media only screen and (max-width : 400px) {
 		background-position:50% 50%;
-		background-image:url("/images/ourdogs/rt_xs.png");
+		background-image:url("/images/ourdogs/rt_xs_400.png");
 		color:white;
 	}
 	@media only screen and (min-width : 400px) {
 		background-position:cover 50%;
-		background-image:url("/images/ourdogs/rt.png");
+		background-image:url("/images/ourdogs/rt_400.png");
 		color:white;
 	}
 
 	@media only screen and (min-width : 768px) {
 		background-position:right 50%;
-		background-image:url("/images/ourdogs/rt_md.png");
+		background-image:url("/images/ourdogs/rt_md_600.png");
 		color:black;
 	}
 
 	@media only screen and (min-width : 992px) {
 			background-position:right 50%;
-			background-image:url("/images/ourdogs/rt_md.png");
+			background-image:url("/images/ourdogs/rt_md_600.png");
 			color:black;
 	}	
 	@media only screen and (min-width : 1200px) {
 			background-position:right 50%;
-			background-image:url("/images/ourdogs/rt.png");
+			background-image:url("/images/ourdogs/rt_800.png");
 			color:black;
 	}
 }

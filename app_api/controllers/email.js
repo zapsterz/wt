@@ -26,8 +26,8 @@ module.exports.email = function(req,res){
 
 	// setup email data with unicode symbols
 	let mailOptions = {
-	    from: 'clairepetley@gmail.com', // sender address
-	    to: 'clairepetley@gmail.com', // list of receivers
+	    from: process.env.CP_EMAIL, // sender address
+	    to: ['clairepetley@gmail.com','waggytailsclubuk@gmail.com'], // list of receivers
 	    subject: 'WAGGY TAILS EMAIL', // Subject line
 	    text: "email: " +  req.body.email + "\n \n \n " + "Message \n \n " + req.body.message  + "\n \n name: " + req.body.name // plain text body
 	};
